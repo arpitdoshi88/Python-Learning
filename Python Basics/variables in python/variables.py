@@ -50,5 +50,5 @@ m=100
 n=100
 m= n = 150 #so integer object of value 100 is now orphaned and it will be cleared from the memory through gc
 
-##python 3.7 has 35 reserved keywords which cannot be used as a variable names
+##python 3.9 has 36 reserved keywords which cannot be used as a variable names
 help("keywords")

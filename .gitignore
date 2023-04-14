@@ -130,3 +130,7 @@ dmypy.json
 
 # shell scipts
 *.sh
+
+#vscode files
+.vscode/
+.github/

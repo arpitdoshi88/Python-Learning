@@ -3,7 +3,10 @@
 # read projects current directory with $PWD
 echo “running command from” $PWD
 cd $PWD
-git add .
-read -p “Enter commit message: “ commitMessage
-git commit -am “$commitMessage”
-git push origin
+echo "Enter commit message"
+read message
+git status
+git add . && \
+git add -u && \
+git commit -m "$message" && \
+git push origin HEAD

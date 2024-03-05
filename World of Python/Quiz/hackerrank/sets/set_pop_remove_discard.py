@@ -24,14 +24,19 @@ if __name__ == '__main__':
     s = set(map(int, input().split()))
     m = int(input())
     if n < 20 and len(s) <= n:
+        commands = list()
         for _ in range(m):
-            commands= input().split()
-            try:
-                command = commands[0]
-                value = commands[1] if len(commands) > 1 else ""
-                exec(f's.{command}({value})')
-            except KeyError:
-                pass
-        print(sum(s))
+            commands.append(input().split())
+        if len(commands) < 20:
+            for command in commands:
+                try:
+                    cmd = command[0]
+                    val = command[1] if len(command) > 1 else ""
+                    exec(f's.{cmd}({val})')
+                except KeyError:
+                    pass
+            print(sum(s))
+        else:
+            print('len of commands are more than 20')
     else:
         print('len of n should be less then 20')

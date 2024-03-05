@@ -1,3 +1,15 @@
+# Input Format
+
+# The first line contains an integer, , denoting the number of commands.
+# Each line  of the  subsequent lines contains one of the commands described above.
+
+# Constraints
+
+# The elements added to the list must be integers.
+# Output Format
+
+# For each command of type print, print the list on a new line.
+
 if __name__ == '__main__':
     N = int(input())
     commands = {}

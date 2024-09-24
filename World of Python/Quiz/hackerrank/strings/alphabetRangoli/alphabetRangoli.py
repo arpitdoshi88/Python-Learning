@@ -31,7 +31,7 @@ def print_rangoli(size):
 
         upper_half = []
         for i in range(1,size):
-            upper_half.append("-".join(reversedAlphas[:-1*size+i-1]+ alphas[-1*i:]).center(width,"-"))
+            upper_half.append("-".join(reversedAlphas[:-1*size+i-1]+ alphas[-1*i:]).center(width,"-")) 
         lower_half = list(reversed(upper_half))
         
         print("\n".join(upper_half + [middle_line] +lower_half))

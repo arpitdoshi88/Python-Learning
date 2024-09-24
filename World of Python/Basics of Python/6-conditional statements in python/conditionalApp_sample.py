@@ -4,7 +4,7 @@ print('my first app')
 print(s.center(30,'-'))
 
 print('should I have a cheat meal today?')
-weekDays = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri']
+weekDays = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri','sat']
 responses = []
 
 for i in weekDays:

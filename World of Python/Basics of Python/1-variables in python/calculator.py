@@ -1,6 +1,6 @@
 print("########### Calcculator Program ######################")
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
 if num1 > 0 and num2 > 0:
     print("Enter 1 for addition, 2 for subtraction, 3 for multiplication, 4 for division,5 for floor division")    

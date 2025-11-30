@@ -1,6 +1,7 @@
 import sys
 
-def main():
+
+def main() -> None:
     print(sys.executable)
 
 
